@@ -93,33 +93,28 @@ var startq= prompt("how mamy characters would you like your password to contain?
 if (startq==null) {
   alert("thats a shame, please refresh the page to restart")
 }else 
-//   startq = Number(startq);
-//   if (startq < 8 || startq > 128) {
-//     alert("The number chosen is not within the valid range (8-128). Please refresh and try again.");
-
-//     var specialcharactersQ=confirm("do you want special characters?");
-//     if(specialcharactersQtrue) {
-//       alert("special character added")
-//   }
-//   };
-
-// }
-
-
-function  d(){}
+  startq = Number(startq);
+  if (startq < 8 || startq > 128) {
+    alert("The number chosen is not within the valid range (8-128). Please refresh and try again.");
+  }
+  else if (startq>=8||startq<=128){
+    var specialcharactersQ=confirm("do you want special characters?");
+    if (specialcharactersQ) {
+    alert("special character added");
+    }else if (specialcharactersQ==false)
+    alert("special character not added");
+  }
+  var lowercase= confirm("do you want lower case characters?");
+  if(lowercase==true){
+        alert("lower case added")
+    }else if(lowercase==false){
+      alert("lower case not added")
+    }  
 // // special characters
-// var specialcharactersQ=confirm("do you want special characters?");
-// if (specialcharactersQ==true) {
-//   alert("special character added");
 
-// }else if (specialcharactersQ==false)alert("special character not added");
-// else
+
 // // lower case character
-// var lowercase= confirm("do you want lower case characters?")
-// if(lowercase==true){
-//     alert("lower case added")
-// }else if(lowercase==false){
-//   alert("lower case not added")
+
 // }
 
 
