@@ -92,17 +92,21 @@ var upperCasedCharacters = [
 var startq= prompt("how mamy characters would you like your password to contain? please enter a integer between 8-128");
 if (startq==null) {
   alert("thats a shame, please refresh the page to restart")
-}else {
-  startq = Number(startq);
-  if (startq < 8 || startq > 128) {
-    alert("The number chosen is not within the valid range (8-128). Please refresh and try again.");
-    var specialcharactersQ=confirm("do you want special characters?");
-    if(specialcharactersQtrue) {
-      alert("special character added")
-  }
-  };
+}else 
+//   startq = Number(startq);
+//   if (startq < 8 || startq > 128) {
+//     alert("The number chosen is not within the valid range (8-128). Please refresh and try again.");
 
-}
+//     var specialcharactersQ=confirm("do you want special characters?");
+//     if(specialcharactersQtrue) {
+//       alert("special character added")
+//   }
+//   };
+
+// }
+
+
+function  d(){}
 // // special characters
 // var specialcharactersQ=confirm("do you want special characters?");
 // if (specialcharactersQ==true) {
