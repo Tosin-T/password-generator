@@ -89,33 +89,47 @@ var upperCasedCharacters = [
 ];
 // starting promt
 
-var startq= prompt("how mamy characters would you like your password to contain? please enter a integer between 8-128");
-if (startq==null) {
-  alert("thats a shame, please refresh the page to restart")
-}else 
+var startq = prompt("How many characters would you like your password to contain? Please enter an integer between 8-128");
+
+if (startq == null) {
+  alert("That's a shame, please refresh the page to restart");
+} else {
   startq = Number(startq);
-  if (startq < 8 || startq > 128) {
+  if (startq <= 8 || startq >= 128) {
     alert("The number chosen is not within the valid range (8-128). Please refresh and try again.");
-  }
-  else if (startq>=8||startq<=128){
-    var specialcharactersQ=confirm("do you want special characters?");
+    // special charatcer
+  } else {
+    var specialcharactersQ = confirm("Do you want special characters?");
+    
     if (specialcharactersQ) {
-    alert("special character added");
-    }else if (specialcharactersQ==false)
-    alert("special character not added");
+      alert("Special character added");
+    } else {
+      alert("Special character not added");
+    }
+// lower case character 
+    var lowercase = confirm("Do you want lowercase characters?");
+    if (lowercase) {
+      alert("Lowercase character added");
+    } else {
+      alert("Lowercase character not added");
+    }
+//  upper case character choice
+    var uppercasecase = confirm("Do you want lowercase characters?");
+    if (uppercase) {
+      alert("Uppercase character added");
+    } else {
+      alert("Uppercase character not added");
+    }
+//  numerical character choice
+    var numbers = confirm("Do you want numeric characters?");
+    if (numbers) {
+      alert("numeric characters added");
+    } else {
+      alert("numeric characters not added");
+    }
+
   }
-  var lowercase= confirm("do you want lower case characters?");
-  if(lowercase==true){
-        alert("lower case added")
-    }else if(lowercase==false){
-      alert("lower case not added")
-    }  
-// // special characters
-
-
-// // lower case character
-
-// }
+}
 
 
 
@@ -127,7 +141,7 @@ function getPasswordOptions() {
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-Math.floor(math.random(arr))
+Math.floor(math.random())
 }
 // Function to generate password with user input
 function generatePassword() {
