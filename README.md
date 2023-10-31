@@ -16,7 +16,7 @@ Next go to the index.html and open in your browser.
 
 ## Usage
 
-The page has several prompts the user must go through before clicking the password generator button. the website should look like /assets/05-javascript-challenge-demo.png
+The page has several prompts the user must go through before clicking the password generator button. the website should look like: https://github.com/Tosin-T/password-generator/blob/main/assets/05-javascript-challenge-demo.png
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
