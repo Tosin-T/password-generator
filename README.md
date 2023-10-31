@@ -12,11 +12,7 @@ Press this and the file will begin to download to a file location of your choice
 
 ONCE downloaded, unzip the file using your desired software.
 
-Next go to the index.html and open in your browser. .
-
-```bash
-pip install foobar
-```
+Next go to the index.html and open in your browser. 
 
 ## Usage
 
